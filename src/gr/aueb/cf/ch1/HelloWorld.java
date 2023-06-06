@@ -1,6 +1,7 @@
 package gr.aueb.cf.ch1;
 
 import gr.aueb.cf.ch1.model.Point;
+import gr.aueb.cf.ch11.HelloUtil;
 
 import java.util.Scanner;
 
@@ -19,5 +20,6 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
+        HelloUtil.sayHello();
     }
 }
