@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch11;
+package gr.aueb.cf.ch1.model;
 
 /**
  * A simple {@link Point} Java Bean

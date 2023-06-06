@@ -93,12 +93,16 @@ public class Account {
      *
      * @param amount
      *          the amount to be withdrawn
+     * @param ssn
+     *          the given ssn
      * @throws Exception
      *          if the amount is greater than the balance
+     *          if the ssn is not valid
      */
-    public void withdraw(double amount) throws Exception {
+    public void withdraw(double amount, String ssn) throws Exception {
         try {
             if (amount > balance) throw new Exception("Insufficient balance exception");
+            if (!isSssValid(ssn)) throw new Exception("SSN is not valid");
             balance -= amount;
         } catch (Exception e) {
             e.printStackTrace();
@@ -124,7 +128,11 @@ public class Account {
      */
     public String accounttoString() {
         return "(" + id + ", " + iban + ", " + firstname +
-                ", " + lastname + ", " + ssn + balance + ")";
+                ", " + lastname + ", " + ssn + ", " + balance + ")";
+    }
+
+    private boolean isSssValid(String ssn) {
+        return this.ssn.equals(ssn);
     }
     // -------x-------- Public API -------------x----------
 
