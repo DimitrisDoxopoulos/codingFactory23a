@@ -1,0 +1,6 @@
+2023-05-23T21:08:55.952443900
+java.lang.IllegalArgumentException: Error in insert
+2023-05-23T21:14:00.875799100
+java.lang.IllegalArgumentException: Error in update
+2023-05-23T21:15:31.936449200
+java.lang.IllegalArgumentException: Error in update
